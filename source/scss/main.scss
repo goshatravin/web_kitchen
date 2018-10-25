@@ -1,0 +1,350 @@
+@import "./node_modules/bootstrap-4-grid/scss/grid.scss";
+
+
+// Reset start
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+    line-height: 1;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+//Reset finish
+
+// navigation bar start 
+html{
+    font-size: 16px;
+}
+.page-header{
+    padding: 2rem;
+}
+.row-header{
+    align-items: center;
+}
+.header-box__logo{
+    justify-content: center;
+    display: flex;
+}
+.header-box_nav{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.header-box_contact{
+    display: flex;
+    justify-content: center;
+    text-align: right;
+}
+.contact_img{
+    max-width: 2rem;
+}
+.contact_item{
+    width: 100%;
+    
+}
+.contact_center{
+    text-align: center;
+}
+.link_img{
+    max-width: 1.5rem;
+}
+.contact_wrap{
+    padding-top: 0.5rem;
+}
+.phone_link{
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: black;
+}
+.page-about__title{
+    font-size: 3rem;
+    color: white;
+    font-weight: bold;
+}
+.page-about__wrap{
+    padding-top: 3rem;
+}
+.page-about__btn{
+    background-color: #ffc600;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    font-variant: small-caps;
+    
+}
+.page-about__row{
+    position: relative;
+}
+.overlay_wrap{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: black;
+    top: 0;
+    left: 0;
+    opacity: 0.4;
+}
+.nav__item{
+    border-bottom: 2px solid transparent;
+    transition: 0.5s;
+    cursor: pointer;
+    font-variant: small-caps;
+    font-size: 1.3rem;
+    padding-bottom: 0.2rem;
+}
+.nav__item:hover{
+    border-bottom: 2px solid green;
+    transition: 0.5s;
+}
+// navigation bar finish 
+
+// main about start 
+
+.page-about{
+    background-image: url("/assets/img/main-bg.jpg");
+    background-position: center;
+    background-size: cover;
+    height: 39.125rem;
+}
+.page-about__row{
+    height: 100%;
+    text-align: center;
+}
+.page-about__col{
+    align-items: flex-end;
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+}
+
+.page-about_list{
+    display:flex;
+    width: 100%;
+    justify-content: space-around;
+    padding-bottom: 0.5rem;
+}
+.list__item{
+    list-style-type: square;
+    font-size: 1.2rem;
+    color: white;
+    font-weight: bold;
+   
+}
+
+// main about finish
+
+// advantage start
+
+.block_advantage__wrap{
+    text-align: center;
+    padding: 4rem 0;
+    margin: 0 auto;
+
+}
+.block_advantage{
+    display: flex;
+    text-align: left;
+    padding-bottom: 7rem;
+    margin: 0 auto;
+    
+}
+.advantage_titlebox{
+    display: flex;
+}
+.box__wrapp{
+    padding-bottom: 1rem;
+}
+.block_advantage__title{
+   font-size: 1.8rem;
+   border-bottom: 3px solid #fcc600;
+   padding-bottom: 1rem;
+   font-weight: bold;
+   font-variant: small-caps;
+   
+}
+.white__title{
+    color: white;
+}
+.block_advantage__item{
+    font-size: 5rem;
+    padding-right: 1rem;
+
+}
+
+.block_advantage_subtitle{
+    font-size: 1.3rem;
+    font-variant: small-caps;
+}
+.block_advantage_text{
+    font-size: 1rem;
+}
+.advantage_inputbox{
+    margin: 0 auto;
+}
+.advantage__input{
+    background-color: #ffc600;
+    border-color: white;
+    outline: none;
+    border-radius: 10px;
+    font-size: 1.5rem;
+    
+}
+.block_advantage__title2{
+    padding-top: 0.5rem;
+    font-size: 1.5rem;
+    color: white;
+}
+
+// page 2
+
+.page-purple{
+    background-color: #8955ba;
+    // -webkit-clip-path: polygon(0 30%, 100% 0, 100% 70%, 0% 100%);
+    // clip-path: polygon(0 30%, 100% 0, 100% 70%, 0% 100%);
+    // padding: 15rem 0;
+}
+.animation_row{
+    padding-top: 2rem;
+    padding-bottom: 6rem;
+    justify-content: space-between;
+}
+.animation__item{
+ text-align: center;
+ margin: 0 auto;
+}
+.animation__box{
+    background-color: white;
+    width: 10vw;
+    height: 10vw;
+    border-radius: 50%;
+    margin: 1rem auto;
+    
+    
+}
+.animation_wrap{
+    padding-top: 1rem;
+}
+.animation__text{
+    color: white;
+    font-size: 1rem;
+    font-variant: small-caps;
+}
+.gallery__img{
+    max-width: 100%;
+}
+.gallery__item{
+    padding-left: 0;
+    padding-right: 0;
+}
+.border__title{
+    border: none;
+}
+
+// pre-footer
+.green-page{
+    background-color: #00a651;
+    padding: 3.3rem 0;
+    text-align: center;
+}
+.pre_link{
+    color: white;
+    font-size: 1.5rem;
+    text-decoration: none;
+    font-weight: 700;
+    padding-bottom: 3px;
+    transition: 0.5s;
+    cursor: pointer;
+    border-bottom: 3px solid transparent 
+}
+
+.pre_link:hover {
+    border-bottom: 3px solid #ffc600;
+    transition: 0.5s;
+    
+}
+.green__row{
+    align-items: center;
+}
+
+// map
+
+.map__item{
+    padding-left: 0;
+    padding-right: 0;
+}
+
+// footer
+
+.footer_wrap{
+    padding: 3rem 0;
+}
+.footer_row{
+    align-items: center;
+    justify-content: center;
+    
+    
+}
+.footer_contact{
+    text-align: center;
+    
+}
+.contact_link{
+    text-decoration: none;
+}
+.input_box{
+    margin-top: 1rem;
+}
+.pre_footer{
+    padding-bottom: 1rem;
+}
+@media (max-width: 575.98px) { 
+    html{
+        font-size: 8px;
+    }
+ }
