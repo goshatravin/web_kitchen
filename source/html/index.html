@@ -11,11 +11,16 @@
     <meta name="keywords" content="ключевое слово 1, ключевое слово 2, ключевое слово 3, ..." />
     <link rel="stylesheet" href="/assets/css/lightbox.min.css">
     <link rel="stylesheet" href="/assets/css/main.css">
+     <!-- scripts -->
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+     <script src="/assets/js/lightbox.min.js"></script>
+     <script src="/assets/js/main.js"></script>
     
 </head>
 
 <body>
     <header>
+        <div class="overlay__main"></div>
         <div class="container-fluid page-header">
             <div class="row row-header">
                 <div class="col-12 col-sm-12 col-md-4 col-lg-3 header-box">
@@ -25,13 +30,12 @@
                 </div>
                 <div class="col-12 col-sm-12 col-md-4 col-lg-6 header-box">
                     <ul class="header-box_nav">
-                        <li class="nav__item">главная</li>
-                        <li class="nav__item">изображения</li>
-                        <li class="nav__item">наши работы</li>
-                        <li class="nav__item">прайс</li>
-                        <li class="nav__item">акции</li>
-                        <li class="nav__item">контакты</li>
-                    </ul>
+                        <a class="nav__item_a" href="/"><li class="nav__item">главная</li></a> 
+                        <a class="nav__item_a" href="/image.html"><li class="nav__item">изображения</li></a> 
+                        <a class="nav__item_a" href="/#work"><li class="nav__item">наши работы</li></a> 
+                        <a  class="nav__item_a" href="/price.html"> <li class="nav__item">прайс</li></a>
+                        <a class="nav__item_a" href="/#contact"><li class="nav__item">контакты</li></a> 
+                     </ul>
                 </div>
                 <div class="col-12 col-sm-12 col-md-4 col-lg-3 header-box">
                     <div class="header-box_contact">
@@ -41,7 +45,7 @@
                             <div class="contact_wrap">
                                     <a class="contact_link" href="#">
                                             <img class="link_img " src="/assets/img/svg_animation/instagram.svg" alt="inst">
-                                        </a> <br>
+                                        </a> 
                                         <a class="contact_link" href="#">
                                             <img class="link_img " src="/assets/img/svg_animation/vk.svg" alt="vk">
                                         </a>
@@ -53,6 +57,9 @@
             </div>
         </div>
         <!--  -->
+        <div class="header__burger">
+            <img class="burder__img" src="/assets/img/menu.png" alt="значек меню">
+        </div>
         <div class="container-fluid page-about">
            
             <div class="row page-about__row">
@@ -66,10 +73,13 @@
                     </div>
                 </div>
                 <div class="col-12 col-sm-12 col-md-12 col-lg-12 page-about__col">
+                        <p class="about-list__p"><span class="first_span span">БЕС</span><span class="second_span span">ПЛА</span><span class="third_span span">ТНО</span> </p>
                     <ul class="page-about_list">
-                        <li class="list__item">более 150 довольных клиентов</li>
-                        <li class="list__item">огромный выбор изображений</li>
-                        <li class="list__item">качество, проверенное временем</li>
+                        <li class="list__item bg-yellow">ваша дополнительная скидка -5% WFSF-W2RL-QHJV</li>
+                        <li class="list__item bg-green">замер</li>
+                        <li class="list__item bg-blue">макетирование</li>
+                        <li class="list__item bg-purple">цветопробы</li>
+                        
                     </ul>
                 </div>
             </div>
@@ -144,7 +154,7 @@
                             собственной кухне.</p>
                     </div>
                 </div>
-                <div class="col-6 col-sm-6 col-md-4 col-lg-4 block_advantage">
+                <div class="col-6 col-sm-6 col-md-4 col-lg-4  block_advantage_padding">
                     <div class="advantage_inputbox">
                         <input class="advantage__input" type="submit" value="обратный звонок">
                     </div>
@@ -153,7 +163,8 @@
         </div>
 
     </div>
-    <div class="page page-purple">
+    <div class=" page-purple">
+        <div class="page-purple-overlay"></div>
         <div class="container">
             <div class="row">
                 <div class="col-12 col-sm-12 col-md-12 col-lg-12 advantage_titlebox">
@@ -164,7 +175,7 @@
                 </div>
                 <div class="col-12 col-sm-12 col-md-12 col-lg-12 svg__animation">
                     <div class="row animation_row">
-                        <div class="col-4 col-sm-2 col-md-2 col-lg-2 animation__item">
+                        <div class="col-6 col-sm-2 col-md-2 col-lg-2 animation__item">
                             <div class="animation__box">
                                 <img class="animation__img" src="/assets/img/svg_animation/mobile-phone.svg" alt="телефон">
                             </div>
@@ -172,7 +183,7 @@
                                 <p class="animation__text">заказать звонок</p>
                             </div>
                         </div>
-                        <div class="col-4 col-sm-2 col-md-2 col-lg-2 animation__item">
+                        <div class="col-6 col-sm-2 col-md-2 col-lg-2 animation__item">
                             <div class="animation__box">
                                 <img src="/assets/img/svg_animation/set-square.svg" alt="линейка">
                             </div>
@@ -180,7 +191,7 @@
                                 <p class="animation__text">замер</p>
                             </div>
                         </div>
-                        <div class="col-4 col-sm-2 col-md-2 col-lg-2 animation__item">
+                        <div class="col-6 col-sm-2 col-md-2 col-lg-2 animation__item">
                             <div class="animation__box">
                                 <img src="/assets/img/svg_animation/picture.svg" alt="">
                             </div>
@@ -188,7 +199,7 @@
                                 <p class="animation__text">выбор изображения</p>
                             </div>
                         </div>
-                        <div class="col-4 col-sm-2 col-md-2 col-lg-2 animation__item">
+                        <div class="col-6 col-sm-2 col-md-2 col-lg-2 animation__item">
                             <div class="animation__box">
                                 <img src="/assets/img/svg_animation/windows.svg" alt="стекло">
                             </div>
@@ -226,10 +237,10 @@
         </div>
     </div>
     <div class="page">
-      <div class="container-fluid gallery-container">
+      <div class="container-fluid gallery-container" id="work">
           <div class="row">
               <div class="col-12 col-sm-12 col-md-12 col-lg-12">
-                    <div class="block_advantage__wrap">
+                    <div class="block_advantage__work">
                             <h2 class="block_advantage__title border__title">Наши работы</h2>
                         </div>
               </div>
@@ -272,7 +283,7 @@
           </div>
       </div>  
     </div>
-    <div class="page green-page">
+    <div class="green-page" id="contact">
         <div class="container">
             <div class="row green__row">
                 <div class="col-12 col-sm-6  col-md-4 col-lg-4 pre_footer">
@@ -289,7 +300,7 @@
             </div>
         </div>
     </div>
-    <div class="page map-page">
+    <div class="map-page">
         <div class="container-fluid">
             <div class="row">
                 <div class="col-12 col-sm-12 col-md-12 col-lg-12 map__item">
@@ -321,22 +332,16 @@
                 </div>
                 <div class="col-12 col-sm-12 col-md-4 col-lg-4 footer__item">
                         <div class="contact_item contact_center">
+                            <br>
                                 <img class="contact_img" src="/assets/img/svg_animation/phone-receiver.svg" alt="phone">
                                 <a class="contact_link  phone_link" href="#">8(911)451-51-01</a> <br>
-                                <!-- <div class="advantage_inputbox input_box">
-                                        <input class="advantage__input" type="submit" value="заказать обратный вызов">
-                                    </div> -->
+                               
                       </div>
                 </div>
             </div>
         </div>
     </footer>
 
-    <!-- scripts -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="/assets/js/lightbox.min.js"></script>
-    
-    
 </body>
 
 </html>
