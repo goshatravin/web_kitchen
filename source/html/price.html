@@ -9,12 +9,12 @@
     <meta name="description" content="Содержимое мета-тега Description" />
     <link rel="canonical" href="http://site.ru/nazvanie-stranitsy" />
     <meta name="keywords" content="ключевое слово 1, ключевое слово 2, ключевое слово 3, ..." />
-    <link rel="stylesheet" href="/assets/css/lightbox.min.css">
-    <link rel="stylesheet" href="/assets/css/main.css">
+    <link rel="stylesheet" href="./assets/css/lightbox.min.css">
+    <link rel="stylesheet" href="./assets/css/main.css">
      <!-- scripts -->
      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-     <script src="/assets/js/lightbox.min.js"></script>
-     <script src="/assets/js/main.js"></script>
+     <script src="./assets/js/lightbox.min.js"></script>
+     <script src="./assets/js/main.js"></script>
 
 </head>
 
@@ -25,29 +25,29 @@
             <div class="row row-header">
                 <div class="col-12 col-sm-12 col-md-4 col-lg-3 header-box">
                     <div class="header-box__logo">
-                        <img class="logo__img" src="/assets/img/logo.png" alt="logo">
+                        <img class="logo__img" src="./assets/img/new-logo.svg" alt="logo">
                     </div>
                 </div>
                 <div class="col-12 col-sm-12 col-md-4 col-lg-6 header-box">
                     <ul class="header-box_nav">
                         <a class="nav__item_a" href="/"><li class="nav__item">главная</li></a> 
-                        <a class="nav__item_a" href="/image.html"><li class="nav__item">изображения</li></a> 
+                        <a class="nav__item_a" href="/image.html#image-page"><li class="nav__item">изображения</li></a> 
                         <a class="nav__item_a" href="/#work"><li class="nav__item">наши работы</li></a> 
-                        <a  class="nav__item_a" href="/price.html"> <li class="nav__item">прайс</li></a>
+                        <a  class="nav__item_a" href="/price.html#price-page"> <li class="nav__item">прайс</li></a>
                         <a class="nav__item_a" href="/#contact"><li class="nav__item">контакты</li></a> 
                      </ul>
                 </div>
                 <div class="col-12 col-sm-12 col-md-4 col-lg-3 header-box">
                     <div class="header-box_contact">
                         <div class="contact_item">
-                            <img class="contact_img" src="/assets/img/svg_animation/phone-receiver.svg" alt="phone">
+                            <img class="contact_img" src="./assets/img/svg_animation/phone-receiver.svg" alt="phone">
                             <a class="contact_link phone_link" href="#">8(911)451-51-01</a> <br>
                             <div class="contact_wrap">
                                     <a class="contact_link" href="#">
-                                            <img class="link_img " src="/assets/img/svg_animation/instagram.svg" alt="inst">
+                                            <img class="link_img " src="./assets/img/svg_animation/instagram.svg" alt="inst">
                                         </a> 
                                         <a class="contact_link" href="#">
-                                            <img class="link_img " src="/assets/img/svg_animation/vk.svg" alt="vk">
+                                            <img class="link_img " src="./assets/img/svg_animation/vk.svg" alt="vk">
                                         </a>
                             </div>
                          
@@ -58,7 +58,7 @@
         </div>
         <!--  -->
         <div class="header__burger">
-            <img class="burder__img" src="/assets/img/menu.png" alt="значек меню">
+            <img class="burder__img" src="./assets/img/menu.png" alt="значек меню">
         </div>
         <div class="container-fluid page-about">
 
@@ -86,7 +86,7 @@
         </div>
     </header>
 
-    <div class="page price-page">
+    <div class="page price-page" id="price-page">
         <div class="price-page_wrap">
             <div class="container">
                 <div class="row price_row">
@@ -99,65 +99,49 @@
                     <div class="col-7 col-sm-5 col-md-3 col-lg-3 price-page__item">
                         <div class="price-page__box box__three">
                                 <h2 class="price__text">Эконом</h2>
-                                <h3 class="price__number">4500 руб.</h3>
+                                <h3 class="price__number">4800 руб.</h3>
                         </div>
                         <ul class="price__list">
                             <li class="price__li">стекло толщиной 4 мм. </li>
-                            <li class="price__li">фотопечать высокого качества УФ-чернилами </li>
-                            <li class="price__li">фотопечать высокого качества УФ-чернилами </li>
-                            <li class="price__li">отверстия под розетки</li>
-                            <li class="price__li">монтаж полотна на клей или держатели.</li>
-                            <li class="price__li">максимальная длина без стыков 3м. </li>
-                            <li class="price__li">выбор любого изображения из каталога</li>
-                            <li class="price__li">срок изготовления 3-5 раб.дней. </li>
+                            <li class="price__li">фотопечать высокого качества ултрафиолетовыми чернилами</li>
+                            <li class="price__li">Покрытие защитной пленкой</li>
+                            <li class="price__li">Срок изготовления 5-7 дней</li>
                         </ul>
                     </div>
                     <div class="col-7 col-sm-5 col-md-3 col-lg-3 price-page__item">
                             <div class="price-page__box box__two">
-                                    <h2 class="price__text">Эконом</h2>
-                                    <h3 class="price__number">4500 руб.</h3>
+                                    <h2 class="price__text">Стандарт</h2>
+                                    <h3 class="price__number">5800 руб.</h3>
                             </div>
                         <ul class="price__list">
-                            <li class="price__li">стекло толщиной 4 мм. </li>
-                            <li class="price__li">фотопечать высокого качества УФ-чернилами </li>
-                            <li class="price__li">фотопечать высокого качества УФ-чернилами </li>
-                            <li class="price__li">отверстия под розетки</li>
-                            <li class="price__li">монтаж полотна на клей или держатели.</li>
-                            <li class="price__li">максимальная длина без стыков 3м. </li>
-                            <li class="price__li">выбор любого изображения из каталога</li>
-                            <li class="price__li">срок изготовления 3-5 раб.дней. </li>
+                            <li class="price__li">стекло толщиной 6 мм. </li>
+                            <li class="price__li">фотопечать высокого качества ултрафиолетовыми чернилами</li>
+                            <li class="price__li">Покрытие защитной пленкой</li>
+                            <li class="price__li">Срок изготовления 5-7 дней</li>
                         </ul>
                     </div>
                     <div class="col-7 col-sm-5 col-md-3 col-lg-3 price-page__item">
                             <div class="price-page__box box__one">
-                                    <h2 class="price__text">Эконом</h2>
-                                    <h3 class="price__number">4500 руб.</h3>
+                                    <h2 class="price__text">Люкс</h2>
+                                    <h3 class="price__number">6800 руб.</h3>
                             </div>
                         <ul class="price__list">
-                            <li class="price__li">стекло толщиной 4 мм. </li>
-                            <li class="price__li">фотопечать высокого качества УФ-чернилами </li>
-                            <li class="price__li">фотопечать высокого качества УФ-чернилами </li>
-                            <li class="price__li">отверстия под розетки</li>
-                            <li class="price__li">монтаж полотна на клей или держатели.</li>
-                            <li class="price__li">максимальная длина без стыков 3м. </li>
-                            <li class="price__li">выбор любого изображения из каталога</li>
-                            <li class="price__li">срок изготовления 3-5 раб.дней. </li>
+                            <li class="price__li">стекло каленое толщиной 6 мм. </li>
+                            <li class="price__li">фотопечать высокого качества ултрафиолетовыми чернилами</li>
+                            <li class="price__li">Покрытие защитной пленкой</li>
+                            <li class="price__li">Срок изготовления 10-12 дней</li>
                         </ul>
                     </div>
                     <div class="col-7 col-sm-5 col-md-3 col-lg-3 price-page__item">
-                            <div class="price-page__box box__one">
-                                    <h2 class="price__text">Эконом</h2>
-                                    <h3 class="price__number">4500 руб.</h3>
+                            <div class="price-page__box box__four">
+                                    <h2 class="price__text">Премиум</h2>
+                                    <h3 class="price__number">7800 руб.</h3>
                             </div>
                         <ul class="price__list">
-                            <li class="price__li">стекло толщиной 4 мм. </li>
-                            <li class="price__li">фотопечать высокого качества УФ-чернилами </li>
-                            <li class="price__li">фотопечать высокого качества УФ-чернилами </li>
-                            <li class="price__li">отверстия под розетки</li>
-                            <li class="price__li">монтаж полотна на клей или держатели.</li>
-                            <li class="price__li">максимальная длина без стыков 3м. </li>
-                            <li class="price__li">выбор любого изображения из каталога</li>
-                            <li class="price__li">срок изготовления 3-5 раб.дней. </li>
+                            <li class="price__li">стекло каленое просветленное (Opti White) толщиной 6 мм. </li>
+                            <li class="price__li">фотопечать высокого качества ултрафиолетовыми чернилами</li>
+                            <li class="price__li">Покрытие защитной пленкой</li>
+                            <li class="price__li">Срок изготовления 12-15 дней</li>
                         </ul>
                     </div>
                 </div>
@@ -173,24 +157,24 @@
             <div class="row footer_row">
                 <div class="col-5 col-sm-6 col-md-4 col-lg-4 footer__item">
                     <div class="header-box__logo">
-                        <img class="logo__img" src="/assets/img/logo.png" alt="logo">
+                        <img class="logo__img" src="./assets/img/logo.png" alt="logo">
                     </div>
                 </div>
                 <div class="col-5 col-sm-6 col-md-4 col-lg-4 footer__item">
                     <h3>Наша компания занимает лидирующую позицию в этой сфере.Более 100 довольных кликетов</h3>
                     <div class="contact_item footer_contact">
                         <a class="contact_link" href="#">
-                            <img class="link_img " src="/assets/img/svg_animation/instagram.svg" alt="inst">
+                            <img class="link_img " src="./assets/img/svg_animation/instagram.svg" alt="inst">
                         </a>
                         <a class="contact_link" href="#">
-                            <img class="link_img " src="/assets/img/svg_animation/vk.svg" alt="vk">
+                            <img class="link_img " src="./assets/img/svg_animation/vk.svg" alt="vk">
                         </a>
                     </div>
 
                 </div>
                 <div class="col-12 col-sm-12 col-md-4 col-lg-4 footer__item">
                     <div class="contact_item contact_center">
-                        <img class="contact_img" src="/assets/img/svg_animation/phone-receiver.svg" alt="phone">
+                        <img class="contact_img" src="./assets/img/svg_animation/phone-receiver.svg" alt="phone">
                         <a class="contact_link  phone_link" href="#">8(911)451-51-01</a> <br>
                         <!-- <div class="advantage_inputbox input_box">
                                         <input class="advantage__input" type="submit" value="заказать обратный вызов">
@@ -200,10 +184,6 @@
             </div>
         </div>
     </footer>
-
-    <!-- scripts -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="/assets/js/lightbox.min.js"></script>
 
 
 </body>

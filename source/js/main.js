@@ -32,3 +32,19 @@ $(".list__item").click(function(){
     }
   });
 });
+
+new WOW().init();
+//  jQuery(document).ready(function() {
+//   jQuery('.block_advantage__item').addClass('hidden').viewportChecker({
+//    classToAdd: 'visible animated bounceInLeft lightpurple',
+//    offset: 100
+//   });
+// });
+
+
+// jQuery(document).ready(function() {
+//     jQuery('.animation__img').addClass('hidden').viewportChecker({
+//      classToAdd: 'visible animated bounceInLeft lightpurple',
+//      offset: 100
+//     });
+//   });   

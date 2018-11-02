@@ -92,7 +92,7 @@ html{
 .header-box__logo{
     justify-content: center;
     display: flex;
-     height: 70px;
+    max-width: 3rem;
 }
 .header-box_nav{
     display: flex;
@@ -122,7 +122,7 @@ html{
 }
 .phone_link{
     text-decoration: none;
-    font-size: 1.2rem;
+    font-size: 1.2vw;
     color: black;
 }
 .page-about__title{
@@ -165,7 +165,7 @@ html{
     transition: 0.5s;
     cursor: pointer;
     font-variant: small-caps;
-    font-size: 1.5rem;
+    font-size: 1.5vw;
     padding-bottom: 0.2rem;
     padding: 1rem;
     font-weight: 300;
@@ -307,6 +307,12 @@ html{
    font-variant: small-caps;
    
 }
+.block_advantage__text{
+    font-size: 1.2rem;
+    padding-top: 1rem;
+    font-variant: small-caps;
+    
+}
 .white__title{
     color: white;
 }
@@ -315,6 +321,15 @@ html{
     padding-right: 1rem;
     font-weight: bold;
 
+}
+.lightpurple{
+    color:#7c84b3;
+}
+.hidden{
+    opacity:0;
+}
+.visible{
+    opacity:1;
 }
 
 .block_advantage_subtitle{
@@ -485,8 +500,6 @@ footer{
     background: #84697c;
     padding-left: 0;
     padding-right: 0;
-    height: 100%;
-    border-radius: 10px;
     
 
 }
@@ -511,6 +524,9 @@ footer{
 }
 .box__three{
     background: lightgreen;
+}
+.box__four{
+    background: lightskyblue;
 }
 .price-page__item:hover  .price__number{
     transform: scale(1.5);

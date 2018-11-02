@@ -9,12 +9,12 @@
     <meta name="description" content="Содержимое мета-тега Description" />
     <link rel="canonical" href="http://site.ru/nazvanie-stranitsy" />
     <meta name="keywords" content="ключевое слово 1, ключевое слово 2, ключевое слово 3, ..." />
-    <link rel="stylesheet" href="/assets/css/lightbox.min.css">
-    <link rel="stylesheet" href="/assets/css/main.css">
+    <link rel="stylesheet" href="./assets/css/lightbox.min.css">
+    <link rel="stylesheet" href="./assets/css/main.css">
      <!-- scripts -->
      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-     <script src="/assets/js/lightbox.min.js"></script>
-     <script src="/assets/js/main.js"></script>
+     <script src="./assets/js/lightbox.min.js"></script>
+     <script src="./assets/js/main.js"></script>
     
 </head>
 
@@ -25,29 +25,29 @@
             <div class="row row-header">
                 <div class="col-12 col-sm-12 col-md-4 col-lg-3 header-box">
                     <div class="header-box__logo">
-                        <img class="logo__img" src="/assets/img/logo.png" alt="logo">
+                        <img class="logo__img" src="./assets/img/new-logo.svg" alt="logo">
                     </div>
                 </div>
                 <div class="col-12 col-sm-12 col-md-4 col-lg-6 header-box">
                     <ul class="header-box_nav">
-                       <a class="nav__item_a" href="/"><li class="nav__item">главная</li></a> 
-                       <a class="nav__item_a" href="/image.html"><li class="nav__item">изображения</li></a> 
-                       <!-- <a class="nav__item_a" href="#work"><li class="nav__item">наши работы</li></a>  -->
-                       <a  class="nav__item_a" href="/price.html"> <li class="nav__item">прайс</li></a>
-                       <!-- <a class="nav__item_a" href="#contact"><li class="nav__item">контакты</li></a>  -->
-                    </ul>
+                        <a class="nav__item_a" href="/"><li class="nav__item">главная</li></a> 
+                        <a class="nav__item_a" href="/image.html#image-page"><li class="nav__item">изображения</li></a> 
+                        <a class="nav__item_a" href="/#work"><li class="nav__item">наши работы</li></a> 
+                        <a  class="nav__item_a" href="/price.html#price-page"> <li class="nav__item">прайс</li></a>
+                        <a class="nav__item_a" href="/#contact"><li class="nav__item">контакты</li></a> 
+                     </ul>
                 </div>
                 <div class="col-12 col-sm-12 col-md-4 col-lg-3 header-box">
                     <div class="header-box_contact">
                         <div class="contact_item">
-                            <img class="contact_img" src="/assets/img/svg_animation/phone-receiver.svg" alt="phone">
+                            <img class="contact_img" src="./assets/img/svg_animation/phone-receiver.svg" alt="phone">
                             <a class="contact_link phone_link" href="#">8(911)451-51-01</a> <br>
                             <div class="contact_wrap">
                                     <a class="contact_link" href="#">
-                                            <img class="link_img " src="/assets/img/svg_animation/instagram.svg" alt="inst">
+                                            <img class="link_img " src="./assets/img/svg_animation/instagram.svg" alt="inst">
                                         </a> 
                                         <a class="contact_link" href="#">
-                                            <img class="link_img " src="/assets/img/svg_animation/vk.svg" alt="vk">
+                                            <img class="link_img " src="./assets/img/svg_animation/vk.svg" alt="vk">
                                         </a>
                             </div>
                          
@@ -58,7 +58,7 @@
         </div>
         <!--  -->
         <div class="header__burger">
-            <img class="burder__img" src="/assets/img/menu.png" alt="значек меню">
+            <img class="burder__img" src="./assets/img/menu.png" alt="значек меню">
         </div>
         <div class="container-fluid page-about">
            
@@ -90,7 +90,7 @@
             <div class="row">
                  <div class="col-12 col-sm-12 col-md-12 col-lg-12 prev-image__title">
                     <select class="prev-image__select" id="page"  onchange="top.location.href=this.options[this.selectedIndex].value;" >
-                        <option value="/image-part1.html#part1">Абстракции</option>
+                        <option value="/image-part1.html#part1">Абстракция</option>
                         <option selected value="/image-part2.html#part2">Город</option>
                         <option value="/image-part3.html#part3">Еда</option>
                         <option value="/image-part4.html#part4">Животные</option>
@@ -98,46 +98,90 @@
                         <option value="/image-part6.html#part6">Природа</option>
                         <option value="/image-part7.html#part7">Фрукты</option>
                         <option value="/image-part8.html#part8">Цвета</option>
-                        <option value="/image-part9.html#part9">Другое</option>
+                        <!-- <option value="/image-part9.html#part9">Другое</option> -->
                         
                     </select>
                  </div>
-                <div class="col-12 col-sm-6 col-md-4 col-lg-4 prev-image__item">
-                    <img class="prev-item__img" src="/assets/img/animals/africa-1170179.jpg" alt="животные">
+                 <div class="col-12 col-sm-6 col-md-4 col-lg-4 prev-image__item">
+                        <a class="example-image-link" href="./assets/img/Город/amsterdam-1150319-min.jpg" data-lightbox="example-set" data-title="Click the right half of the image to move forward.">
+                            <img class="example-image prev-item__img" src="./assets/img/Город/amsterdam-1150319-min.jpg" alt="Город"/></a>
                 </div>
                 <div class="col-12 col-sm-6 col-md-4 col-lg-4 prev-image__item">
-                        <img class="prev-item__img" src="/assets/img/animals/africa-1170179.jpg" alt="животные">
+                          <a class="example-image-link" href="./assets/img/Город/architecture-1853552-min.jpg" data-lightbox="example-set" data-title="Click the right half of the image to move forward.">
+                            <img class="example-image prev-item__img" src="./assets/img/Город/architecture-1853552-min.jpg" alt="Город"/></a>
                 </div>
                 <div class="col-12 col-sm-6 col-md-4 col-lg-4 prev-image__item">
-                        <img class="prev-item__img" src="/assets/img/animals/africa-1170179.jpg" alt="животные">
+                          <a class="example-image-link" href="./assets/img/Город/architecture-1868667-min.jpg" data-lightbox="example-set" data-title="Click the right half of the image to move forward.">
+                            <img class="example-image prev-item__img" src="./assets/img/Город/architecture-1868667-min.jpg" alt="Город"/></a>
                 </div>
                 <div class="col-12 col-sm-6 col-md-4 col-lg-4 prev-image__item">
-                        <img class="prev-item__img" src="/assets/img/animals/africa-1170179.jpg" alt="животные">
+                          <a class="example-image-link" href="./assets/img/Город/chicago-690364-min.jpg" data-lightbox="example-set" data-title="Click the right half of the image to move forward.">
+                            <img class="example-image prev-item__img" src="./assets/img/Город/chicago-690364-min.jpg" alt="Город"/></a>
                 </div>
                 <div class="col-12 col-sm-6 col-md-4 col-lg-4 prev-image__item">
-                        <img class="prev-item__img" src="/assets/img/animals/africa-1170179.jpg" alt="животные">
+                          <a class="example-image-link" href="./assets/img/Город/clouds-2517653-min.jpg" data-lightbox="example-set" data-title="Click the right half of the image to move forward.">
+                            <img class="example-image prev-item__img" src="./assets/img/Город/clouds-2517653-min.jpg" alt="Город"/></a>
                 </div>
                 <div class="col-12 col-sm-6 col-md-4 col-lg-4 prev-image__item">
-                        <img class="prev-item__img" src="/assets/img/animals/africa-1170179.jpg" alt="животные">
+                          <a class="example-image-link" href="./assets/img/Город/golden-gate-bridge-1081782-min.jpg" data-lightbox="example-set" data-title="Click the right half of the image to move forward.">
+                            <img class="example-image prev-item__img" src="./assets/img/Город/golden-gate-bridge-1081782-min.jpg" alt="Город"/></a>
                 </div>
                 <div class="col-12 col-sm-6 col-md-4 col-lg-4 prev-image__item">
-                        <img class="prev-item__img" src="/assets/img/animals/africa-1170179.jpg" alt="животные">
+                          <a class="example-image-link" href="./assets/img/Город/grand-palace-1822487-min.jpg" data-lightbox="example-set" data-title="Click the right half of the image to move forward.">
+                            <img class="example-image prev-item__img" src="./assets/img/Город/grand-palace-1822487-min.jpg" alt="Город"/></a>
                 </div>
                 <div class="col-12 col-sm-6 col-md-4 col-lg-4 prev-image__item">
-                        <img class="prev-item__img" src="/assets/img/animals/africa-1170179.jpg" alt="животные">
+                          <a class="example-image-link" href="./assets/img/Город/hong-kong-1990268-min.jpg" data-lightbox="example-set" data-title="Click the right half of the image to move forward.">
+                            <img class="example-image prev-item__img" src="./assets/img/Город/hong-kong-1990268-min.jpg" alt="Город"/></a>
                 </div>
                 <div class="col-12 col-sm-6 col-md-4 col-lg-4 prev-image__item">
-                        <img class="prev-item__img" src="/assets/img/animals/africa-1170179.jpg" alt="животные">
+                          <a class="example-image-link" href="./assets/img/Город/london-441853-min.jpg" data-lightbox="example-set" data-title="Click the right half of the image to move forward.">
+                            <img class="example-image prev-item__img" src="./assets/img/Город/london-441853-min.jpg" alt="Город"/></a>
                 </div>
                 <div class="col-12 col-sm-6 col-md-4 col-lg-4 prev-image__item">
-                        <img class="prev-item__img" src="/assets/img/animals/africa-1170179.jpg" alt="животные">
+                          <a class="example-image-link" href="./assets/img/Город/manhattan-336708-min.jpg" data-lightbox="example-set" data-title="Click the right half of the image to move forward.">
+                            <img class="example-image prev-item__img" src="./assets/img/Город/manhattan-336708-min.jpg" alt="Город"/></a>
                 </div>
                 <div class="col-12 col-sm-6 col-md-4 col-lg-4 prev-image__item">
-                        <img class="prev-item__img" src="/assets/img/animals/africa-1170179.jpg" alt="животные">
+                          <a class="example-image-link" href="./assets/img/Город/manhattan-407703-min.jpg" data-lightbox="example-set" data-title="Click the right half of the image to move forward.">
+                            <img class="example-image prev-item__img" src="./assets/img/Город/manhattan-407703-min.jpg" alt="Город"/></a>
                 </div>
                 <div class="col-12 col-sm-6 col-md-4 col-lg-4 prev-image__item">
-                        <img class="prev-item__img" src="/assets/img/animals/africa-1170179.jpg" alt="животные">
+                          <a class="example-image-link" href="./assets/img/Город/new-york-city-336475-min.jpg" data-lightbox="example-set" data-title="Click the right half of the image to move forward.">
+                            <img class="example-image prev-item__img" src="./assets/img/Город/new-york-city-336475-min.jpg" alt="Город"/></a>
                 </div>
+                <div class="col-12 col-sm-6 col-md-4 col-lg-4 prev-image__item">
+                          <a class="example-image-link" href="./assets/img/Город/panorama-2117310-min.jpg" data-lightbox="example-set" data-title="Click the right half of the image to move forward.">
+                            <img class="example-image prev-item__img" src="./assets/img/Город/panorama-2117310-min.jpg" alt="Город"/></a>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-4 prev-image__item">
+                              <a class="example-image-link" href="./assets/img/Город/panorama-2646143-min.jpg" data-lightbox="example-set" data-title="Click the right half of the image to move forward.">
+                                <img class="example-image prev-item__img" src="./assets/img/Город/panorama-2646143-min.jpg" alt="Город"/></a>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-4 prev-image__item">
+                              <a class="example-image-link" href="./assets/img/Город/paris-1836415-min.jpg" data-lightbox="example-set" data-title="Click the right half of the image to move forward.">
+                                <img class="example-image prev-item__img" src="./assets/img/Город/paris-1836415-min.jpg" alt="Город"/></a>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-4 prev-image__item">
+                              <a class="example-image-link" href="./assets/img/Город/prague-3010407-min.jpg" data-lightbox="example-set" data-title="Click the right half of the image to move forward.">
+                                <img class="example-image prev-item__img" src="./assets/img/Город/prague-3010407-min.jpg" alt="Город"/></a>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-4 prev-image__item">
+                              <a class="example-image-link" href="./assets/img/Город/singapore-river-255116-min.jpg" data-lightbox="example-set" data-title="Click the right half of the image to move forward.">
+                                <img class="example-image prev-item__img" src="./assets/img/Город/singapore-river-255116-min.jpg" alt="Город"/></a>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-4 prev-image__item">
+                              <a class="example-image-link" href="./assets/img/Город/station-839208-min.jpg" data-lightbox="example-set" data-title="Click the right half of the image to move forward.">
+                                <img class="example-image prev-item__img" src="./assets/img/Город/station-839208-min.jpg" alt="Город"/></a>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-4 prev-image__item">
+                              <a class="example-image-link" href="./assets/img/Город/taxi-cab-381233-min.jpg" data-lightbox="example-set" data-title="Click the right half of the image to move forward.">
+                                <img class="example-image prev-item__img" src="./assets/img/Город/taxi-cab-381233-min.jpg" alt="Город"/></a>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-4 prev-image__item">
+                              <a class="example-image-link" href="./assets/img/Город/urban-438393-min.jpg" data-lightbox="example-set" data-title="Click the right half of the image to move forward.">
+                                <img class="example-image prev-item__img" src="./assets/img/Город/urban-438393-min.jpg" alt="Город"/></a>
+                    </div>
             </div>
         </div>
      </div>
@@ -152,17 +196,17 @@
             <div class="row footer_row">
                 <div class="col-5 col-sm-6 col-md-4 col-lg-4 footer__item">
                         <div class="header-box__logo">
-                                <img class="logo__img" src="/assets/img/logo.png" alt="logo">
+                                <img class="logo__img" src="./assets/img/new-logo.svg" alt="logo">
                             </div>
                 </div>
                 <div class="col-5 col-sm-6 col-md-4 col-lg-4 footer__item">
                      <h3>Наша компания занимает лидирующую позицию в этой сфере.Более 100 довольных кликетов</h3>
                      <div class="contact_item footer_contact">
                            <a class="contact_link" href="#">
-                                <img class="link_img " src="/assets/img/svg_animation/instagram.svg" alt="inst">
+                                <img class="link_img " src="./assets/img/svg_animation/instagram.svg" alt="inst">
                             </a>
                             <a class="contact_link" href="#">
-                                <img class="link_img " src="/assets/img/svg_animation/vk.svg" alt="vk">
+                                <img class="link_img " src="./assets/img/svg_animation/vk.svg" alt="vk">
                             </a>
                   </div>
 
@@ -170,7 +214,7 @@
                 <div class="col-12 col-sm-12 col-md-4 col-lg-4 footer__item">
                         <div class="contact_item contact_center">
                             <br>
-                                <img class="contact_img" src="/assets/img/svg_animation/phone-receiver.svg" alt="phone">
+                                <img class="contact_img" src="./assets/img/svg_animation/phone-receiver.svg" alt="phone">
                                 <a class="contact_link  phone_link" href="#">8(911)451-51-01</a> <br>
                                
                       </div>
