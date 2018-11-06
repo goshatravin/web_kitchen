@@ -48,3 +48,23 @@ new WOW().init();
 //      offset: 100
 //     });
 //   });   
+
+//js mask input
+
+$(function(){
+    //2. Получить элемент, к которому необходимо добавить маску
+    $("#phone").mask("8(999) 999-9999");
+  });
+  
+
+
+$(function(){
+    $(".btn-click").click(function(){
+        $(".pop-up__overlay").fadeIn();
+        $(".pop-up").fadeIn();
+    })
+    $(".pop-up__close-img").click(function(){
+        $(".pop-up__overlay").fadeOut();
+        $(".pop-up").fadeOut();
+    })
+})

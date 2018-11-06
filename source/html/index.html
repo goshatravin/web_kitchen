@@ -15,6 +15,7 @@
      <!-- scripts -->
      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
      <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.maskedinput/1.4.1/jquery.maskedinput.min.js"></script>
      <script src="./assets/js/lightbox.min.js"></script>
      <script src="./assets/js/main.js"></script>
     
@@ -22,6 +23,18 @@
 
 <body>
     <header>
+        <div class="pop-up__overlay"></div>
+        <div class="pop-up">
+            <div class="pop-up__box">
+                 <div class="pop-up__close">
+                     <img src="./assets/img/cancel.svg" class="pop-up__close-img" alt="крестик">
+                 </div>
+                <p class="pop-up__text">мы свяжемся с вами в ближайшее время </p>
+                <input  class="pop-up__input" type="text" placeholder="Ваше имя">
+                <input  class="pop-up__input" id="phone" type="tel" placeholder="Ваш телефон">
+                <input  class="pop-up__input advantage__input" type="submit" value="отправить">
+            </div>
+        </div>
         <div class="overlay__main"></div>
         <div class="container-fluid page-header">
             <div class="row row-header">
@@ -43,7 +56,7 @@
                     <div class="header-box_contact">
                         <div class="contact_item">
                             <img class="contact_img" src="./assets/img/svg_animation/phone-receiver.svg" alt="phone">
-                            <a class="contact_link phone_link" href="#">8(911)451-51-01</a> <br>
+                            <a class="contact_link phone_link" href="callto:8(911)858-05-55">8(911)858-05-55</a> <br>
                             <div class="contact_wrap">
                                     <a class="contact_link" href="#">
                                             <img class="link_img " src="./assets/img/svg_animation/instagram.svg" alt="inst">
@@ -70,7 +83,7 @@
                     <div class="page-about__text">
                         <h1 class="page-about__title">Фартуки для кухни с фотопечатью <br>    в Калининграде</h1>
                         <div class="page-about__wrap">
-                            <a href="#"><input class="page-about__btn" type="submit" value="заказать фартук"></a>
+                            <a href="#"><input class=" btn-click page-about__btn" type="submit" value="заказать фартук"></a>
                         </div>
                     </div>
                 </div>
@@ -97,57 +110,52 @@
                     </div>
                 </div>
                 <div class="col-6 col-sm-6 col-md-4 col-lg-4 block_advantage">
-                    <span class="block_advantage__item wow bounceInLeft" data-wow-duration="1s" data-wow-delay="1s">1</span>
+                    <span class="block_advantage__item advantage-item_one wow bounceInLeft" data-wow-duration="1s" data-wow-delay="1s">1</span>
                     <div class="advantage__box">
                         <div class="box__wrapp">
-                            <h3 class="block_advantage_subtitle">чистая кухня всегда</h3>
+                            <h3 class="block_advantage_subtitle">Быстрый монтаж</h3>
                         </div>
-                        <p class="block_advantage_text">благодаря ему нам удаётся сохранить чистоту и опрятность на
-                            собственной кухне.</p>
+                        <p class="block_advantage_text">Установка фартука происходит в течении 2 часов, так как не требует выравнивания стен.</p>
                     </div>
                 </div>
                 <div class="col-6 col-sm-6 col-md-4 col-lg-4 block_advantage">
-                    <span class="block_advantage__item wow bounceInLeft" data-wow-duration="1s" data-wow-delay="1s">2</span>
+                    <span class="block_advantage__item advantage-item_two wow bounceInLeft" data-wow-duration="1s" data-wow-delay="1s">2</span>
                     <div class="advantage__box">
                         <div class="box__wrapp">
-                            <h3 class="block_advantage_subtitle">чистая кухня всегда</h3>
+                            <h3 class="block_advantage_subtitle">Красота и изящество.</h3>
                         </div>
-                        <p class="block_advantage_text">благодаря ему нам удаётся сохранить чистоту и опрятность на
-                            собственной кухне.</p>
+                        <p class="block_advantage_text">Воля вашей фантазии безгранична в выборе изображения.</p>
                     </div>
                 </div>
                 <div class="col-6 col-sm-6 col-md-4 col-lg-4 block_advantage">
-                    <span class="block_advantage__item wow bounceInLeft" data-wow-duration="1s" data-wow-delay="1s">3</span>
+                    <span class="block_advantage__item advantage-item_three wow bounceInLeft" data-wow-duration="1s" data-wow-delay="1s">3</span>
                     <div class="advantage__box">
                         <div class="box__wrapp">
-                            <h3 class="block_advantage_subtitle">чистая кухня всегда</h3>
+                            <h3 class="block_advantage_subtitle">«Сам себе дизайнер»</h3>
                         </div>
-                        <p class="block_advantage_text">благодаря ему нам удаётся сохранить чистоту и опрятность на
-                            собственной кухне.</p>
+                        <p class="block_advantage_text">Возможность подобрать индивидуальный дизайн и интерьер Вашей кухни.</p>
                     </div>
                 </div>
                 <div class="col-6 col-sm-6 col-md-4 col-lg-4 block_advantage">
-                    <span class="block_advantage__item wow bounceInLeft" data-wow-duration="1s" data-wow-delay="1.5s">4</span>
+                    <span class="block_advantage__item advantage-item_four wow bounceInLeft" data-wow-duration="1s" data-wow-delay="1.5s">4</span>
                     <div class="advantage__box">
                         <div class="box__wrapp">
-                            <h3 class="block_advantage_subtitle">чистая кухня всегда</h3>
+                            <h3 class="block_advantage_subtitle">Долговечность</h3>
                         </div>
-                        <p class="block_advantage_text">благодаря ему нам удаётся сохранить чистоту и опрятность на
-                            собственной кухне.</p>
+                        <p class="block_advantage_text">УФ- чернила буквально впечатываются в материал (фотополимеризуются) под воздействием ультрафиолетового излучения.</p>
                     </div>
                 </div>
                 <div class="col-6 col-sm-6 col-md-4 col-lg-4 block_advantage">
-                    <span class="block_advantage__item wow bounceInLeft" data-wow-duration="1s" data-wow-delay="1.5s">5</span>
+                    <span class="block_advantage__item advantage-item_five wow bounceInLeft" data-wow-duration="1s" data-wow-delay="1.5s">5</span>
                     <div class="advantage__box">
                         <div class="box__wrapp">
-                            <h3 class="block_advantage_subtitle">чистая кухня всегда</h3>
+                            <h3 class="block_advantage_subtitle">Экологичность</h3>
                         </div>
-                        <p class="block_advantage_text">благодаря ему нам удаётся сохранить чистоту и опрятность на
-                            собственной кухне.</p>
+                        <p class="block_advantage_text">Для печати фартука используются только экологичные УФ-чернила.</p>
                     </div>
                 </div>
                 <div class="col-6 col-sm-6 col-md-4 col-lg-4 block_advantage">
-                    <span class="block_advantage__item wow bounceInLeft" data-wow-duration="1s" data-wow-delay="1.5s">6</span>
+                    <span class="block_advantage__item advantage-item_six wow bounceInLeft" data-wow-duration="1s" data-wow-delay="1.5s">6</span>
                     <div class="advantage__box">
                         <div class="box__wrapp">
                             <h3 class="block_advantage_subtitle">чистая кухня всегда</h3>
@@ -158,7 +166,7 @@
                 </div>
                 <div class="col-6 col-sm-6 col-md-4 col-lg-4  block_advantage_padding">
                     <div class="advantage_inputbox">
-                        <input class="advantage__input" type="submit" value="обратный звонок">
+                        <input class=" btn-click advantage__input" type="submit" value="обратный звонок">
                     </div>
                 </div>
             </div>
@@ -231,7 +239,7 @@
                 <div class="col-6 col-sm-6 col-md-4 col-lg-4 block_advantage">
 
                     <div class="advantage_inputbox">
-                        <input class="advantage__input" type="submit" value="Вызов дизайнера">
+                        <input class=" btn-click advantage__input" type="submit" value="Вызов дизайнера">
                     </div>
 
                 </div>
@@ -290,7 +298,7 @@
             <div class="row green__row">
                 <div class="col-12 col-sm-6  col-md-4 col-lg-4 pre_footer">
                         <div class="contact_item pre_phone">
-                                <a class="contact_link  phone_link pre_link" href="#">8(911)451-51-01</a> <br>
+                                <a class="contact_link  phone_link pre_link" href="callto:8(911)858-05-55">8(911)858-05-55</a> <br>
                       </div>
                 </div>
                 <div class="col-12 col-sm-12 col-md-4 col-lg-4 pre_footer">
@@ -321,7 +329,7 @@
                             </div>
                 </div>
                 <div class="col-5 col-sm-6 col-md-4 col-lg-4 footer__item">
-                     <h3>Наша компания занимает лидирующую позицию в этой сфере.Более 100 довольных кликетов</h3>
+                     <h3>Наша компания занимает лидирующую позицию в этой сфере.Более 100 довольных клиентов</h3>
                      <div class="contact_item footer_contact">
                            <a class="contact_link" href="#">
                                 <img class="link_img " src="./assets/img/svg_animation/instagram.svg" alt="inst">
@@ -336,10 +344,9 @@
                         <div class="contact_item contact_center">
                             <br>
                                 <img class="contact_img" src="./assets/img/svg_animation/phone-receiver.svg" alt="phone">
-                                <a class="contact_link  phone_link" href="#">8(911)451-51-01</a> <br>
+                                <a class="contact_link  phone_link" href="callto:8(911)858-05-55">8(911)858-05-55</a> <br>
                                
                       </div>
-                </div>
             </div>
         </div>
     </footer>
