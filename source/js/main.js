@@ -10,6 +10,15 @@ $('.overlay__main').on('click', function(){
      $('.header__burger').fadeToggle(200);
 });
 
+// menu
+$(document).ready(function(){
+    $(".nav__item_a").click(function(){
+        $(".overlay__main").fadeToggle(200);
+        $('.page-header').fadeToggle(400);
+    });
+    
+});
+
 // анимация
 
 $(document).ready(function(){
