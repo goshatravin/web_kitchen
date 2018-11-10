@@ -1,21 +1,28 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="ru" prefix="og: http://ogp.me/ns#">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-    <meta name="description" content="Содержимое мета-тега Description" />
-    <link rel="canonical" href="http://site.ru/nazvanie-stranitsy" />
-    <meta name="keywords" content="ключевое слово 1, ключевое слово 2, ключевое слово 3, ..." />
+    <title>Скинали  для кухни  - лучшие цены на стеклянные фартуки в Калининграде</title>
+    <meta name="description" content="Изготовление скинали для кухонных стеклянных фартуков для кухни в Калининграде, низкая цена! Замер , макетирование и цветопробы бесплатно" />
+    <link rel="canonical" href="https://fartuk39.ru/glavnaya"/>
+    <meta name="keywords" content="фартук, фартук для кухни, скинали, фартук скинали, фартук стекло, стекло, фото фартук, панели для кухни из стекла, низкая цена, бесплатная примерка" />
+    <meta property="og:title" content="Скинали  для кухни  - лучшие цены на стеклянные фартуки в Калининграде" />
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="https://fartuk39.ru/glavnaya" />
+    <meta property="og:image" content="./assets/img/new-logo.svg" />
+    <meta property="og:description" content="Изготовление скинали для кухонных стеклянных фартуков для кухни в Калининграде, низкая цена! Замер , макетирование и цветопробы бесплатно"/>
     <link rel="stylesheet" href="./assets/css/lightbox.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
     <link rel="stylesheet" href="./assets/css/main.css">
-     <!-- scripts -->
+    
+    <!-- scripts -->
      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
      <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.maskedinput/1.4.1/jquery.maskedinput.min.js"></script>
+     <script src="./assets/js/ajax.js"></script>
      <script src="./assets/js/lightbox.min.js"></script>
      <script src="./assets/js/main.js"></script>
     
@@ -30,9 +37,15 @@
                      <img src="./assets/img/cancel.svg" class="pop-up__close-img" alt="крестик">
                  </div>
                 <p class="pop-up__text">мы свяжемся с вами в ближайшее время </p>
-                <input  class="pop-up__input" type="text" placeholder="Ваше имя">
-                <input  class="pop-up__input" id="phone" type="tel" placeholder="Ваш телефон">
-                <input  class="pop-up__input advantage__input" type="submit" value="отправить">
+                <form id="form" action="mail.php">
+                    <div class="input-overlay">
+                        <p class="input-overlay__text">Спасибо за ваше обращение !</p>
+                    </div>
+                        <input  class="pop-up__input" name="name" type="text" required  placeholder="Ваше имя">
+                        <input  class="pop-up__input" name="phone" id="phone" type="tel" required placeholder="Ваш телефон">
+                        <input  class="pop-up__input advantage__input" type="submit" value="отправить">
+                </form>
+              
             </div>
         </div>
         <div class="overlay__main"></div>
@@ -56,12 +69,12 @@
                     <div class="header-box_contact">
                         <div class="contact_item">
                             <img class="contact_img" src="./assets/img/svg_animation/phone-receiver.svg" alt="phone">
-                            <a class="contact_link phone_link" href="callto:8(911)858-05-55">8(911)858-05-55</a> <br>
+                            <a class="contact_link phone_link" href="callto:8(981)458-98-17">8(981)458-98-17</a> <br>
                             <div class="contact_wrap">
-                                    <a class="contact_link" href="#">
+                                    <a class="contact_link" href="https://www.instagram.com/fartuk39/" target="_blank">
                                             <img class="link_img " src="./assets/img/svg_animation/instagram.svg" alt="inst">
                                         </a> 
-                                        <a class="contact_link" href="#">
+                                        <a class="contact_link" href="https://vk.com/fartuk39" target="_blank">
                                             <img class="link_img " src="./assets/img/svg_animation/vk.svg" alt="vk">
                                         </a>
                             </div>
@@ -298,7 +311,7 @@
             <div class="row green__row">
                 <div class="col-12 col-sm-6  col-md-4 col-lg-4 pre_footer">
                         <div class="contact_item pre_phone">
-                                <a class="contact_link  phone_link pre_link" href="callto:8(911)858-05-55">8(911)858-05-55</a> <br>
+                                <a class="contact_link  phone_link pre_link" href="callto:8(981)458-98-17">8(981)458-98-17</a> <br>
                       </div>
                 </div>
                 <div class="col-12 col-sm-12 col-md-4 col-lg-4 pre_footer">
@@ -331,22 +344,25 @@
                 <div class="col-5 col-sm-6 col-md-4 col-lg-4 footer__item">
                      <h3>Наша компания занимает лидирующую позицию в этой сфере.Более 100 довольных клиентов</h3>
                      <div class="contact_item footer_contact">
-                           <a class="contact_link" href="#">
-                                <img class="link_img " src="./assets/img/svg_animation/instagram.svg" alt="inst">
-                            </a>
-                            <a class="contact_link" href="#">
-                                <img class="link_img " src="./assets/img/svg_animation/vk.svg" alt="vk">
-                            </a>
-                  </div>
+                            <a class="contact_link" href="https://www.instagram.com/fartuk39/" target="_blank">
+                                 <img class="link_img " src="./assets/img/svg_animation/instagram.svg" alt="inst">
+                             </a>
+                             <a class="contact_link" href="https://vk.com/fartuk39" target="_blank" >
+                                 <img class="link_img " src="./assets/img/svg_animation/vk.svg" alt="vk">
+                             </a>
+                   </div>
 
                 </div>
                 <div class="col-12 col-sm-12 col-md-4 col-lg-4 footer__item">
                         <div class="contact_item contact_center">
                             <br>
                                 <img class="contact_img" src="./assets/img/svg_animation/phone-receiver.svg" alt="phone">
-                                <a class="contact_link  phone_link" href="callto:8(911)858-05-55">8(911)858-05-55</a> <br>
+                                <a class="contact_link  phone_link" href="callto:8(981)458-98-17">8(981)458-98-17</a> <br>
                                
                       </div>
+            </div>
+            <div class="col-12 col-sm-12 col-md-12 col-lg-12 georgetravin">
+                <p>разработка и продвижение <br> goshatravin@gmail.com</p>
             </div>
         </div>
     </footer>

@@ -1,25 +1,52 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="ru" prefix="og: http://ogp.me/ns#">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-    <meta name="description" content="Содержимое мета-тега Description" />
-    <link rel="canonical" href="http://site.ru/nazvanie-stranitsy" />
-    <meta name="keywords" content="ключевое слово 1, ключевое слово 2, ключевое слово 3, ..." />
-    <link rel="stylesheet" href="./assets/css/lightbox.min.css">
-    <link rel="stylesheet" href="./assets/css/main.css">
-     <!-- scripts -->
-     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-     <script src="./assets/js/lightbox.min.js"></script>
-     <script src="./assets/js/main.js"></script>
-
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Каталог фото скинали для кухни</title>
+        <meta name="description" content="Каталог изображений скинали для стеклянных фартуков содержит только лучшие фотографии" />
+        <link rel="canonical" href="https://fartuk39.ru/image.html"/>
+        <meta name="keywords" content="фартук, фартук для кухни, скинали, фартук скинали, фартук стекло, стекло, фото фартук, панели для кухни из стекла, низкая цена, бесплатная примерка" />
+        <meta property="og:title" content="Каталог фото скинали для кухни" />
+        <meta property="og:type" content="article" />
+        <meta property="og:url" content="https://fartuk39.ru/image.html" />
+        <meta property="og:image" content="./assets/img/new-logo.svg" />
+        <meta property="og:description" content="Каталог изображений скинали для стеклянных фартуков содержит только лучшие фотографии"/>
+        <link rel="stylesheet" href="./assets/css/lightbox.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+        <link rel="stylesheet" href="./assets/css/main.css">
+        
+        <!-- scripts -->
+         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+         <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.maskedinput/1.4.1/jquery.maskedinput.min.js"></script>
+         <script src="./assets/js/lightbox.min.js"></script>
+         <script src="./assets/js/main.js"></script>
+        
+    </head>
 
 <body>
     <header>
+            <div class="pop-up__overlay"></div>
+            <div class="pop-up">
+                    <div class="pop-up__box">
+                         <div class="pop-up__close">
+                             <img src="./assets/img/cancel.svg" class="pop-up__close-img" alt="крестик">
+                         </div>
+                        <p class="pop-up__text">мы свяжемся с вами в ближайшее время </p>
+                        <form id="form" action="mail.php">
+                            <div class="input-overlay">
+                                <p class="input-overlay__text">Спасибо за ваше обращение !</p>
+                            </div>
+                                <input  class="pop-up__input" name="name" type="text" required  placeholder="Ваше имя">
+                                <input  class="pop-up__input" name="phone" id="phone" type="tel" required placeholder="Ваш телефон">
+                                <input  class="pop-up__input advantage__input" type="submit" value="отправить">
+                        </form>
+                      
+                    </div>
+                </div>
             <div class="overlay__main"></div>
         <div class="container-fluid page-header">
             <div class="row row-header">
@@ -41,12 +68,12 @@
                     <div class="header-box_contact">
                         <div class="contact_item">
                             <img class="contact_img" src="./assets/img/svg_animation/phone-receiver.svg" alt="phone">
-                            <a class="contact_link phone_link" href="callto:8(911)858-05-55">8(911)858-05-55</a> <br>
+                            <a class="contact_link phone_link" href="callto:8(981)458-98-17">8(981)458-98-17</a> <br>
                             <div class="contact_wrap">
-                                    <a class="contact_link" href="#">
+                                    <a class="contact_link" href="https://www.instagram.com/fartuk39/" target="_blank">
                                             <img class="link_img " src="./assets/img/svg_animation/instagram.svg" alt="inst">
                                         </a> 
-                                        <a class="contact_link" href="#">
+                                        <a class="contact_link" href="https://vk.com/fartuk39" target="_blank">
                                             <img class="link_img " src="./assets/img/svg_animation/vk.svg" alt="vk">
                                         </a>
                             </div>
@@ -66,9 +93,9 @@
                 <div class="overlay_wrap"></div>
                 <div class="col-12 col-sm-12 col-md-12 col-lg-12 page-about__col">
                     <div class="page-about__text">
-                        <h1 class="page-about__title">Фартуки для кухни с фотопечатью <br> в Калининграде</h1>
+                        <h1 class="page-about__title">Каталог изображений для кухни</h1>
                         <div class="page-about__wrap">
-                            <a href="#"><input class="page-about__btn" type="submit" value="заказать фартук"></a>
+                            <a href="#"><input class=" btn-click page-about__btn" type="submit" value="заказать фартук"></a>
                         </div>
                     </div>
                 </div>
@@ -185,23 +212,26 @@
                 <div class="col-5 col-sm-6 col-md-4 col-lg-4 footer__item">
                     <h3>Наша компания занимает лидирующую позицию в этой сфере.Более 100 довольных клиентов</h3>
                     <div class="contact_item footer_contact">
-                        <a class="contact_link" href="#">
-                            <img class="link_img " src="./assets/img/svg_animation/instagram.svg" alt="inst">
-                        </a>
-                        <a class="contact_link" href="#">
-                            <img class="link_img " src="./assets/img/svg_animation/vk.svg" alt="vk">
-                        </a>
-                    </div>
+                            <a class="contact_link" href="https://www.instagram.com/fartuk39/" target="_blank">
+                                 <img class="link_img " src="./assets/img/svg_animation/instagram.svg" alt="inst">
+                             </a>
+                             <a class="contact_link" href="https://vk.com/fartuk39" target="_blank" >
+                                 <img class="link_img " src="./assets/img/svg_animation/vk.svg" alt="vk">
+                             </a>
+                   </div>
 
                 </div>
                 <div class="col-12 col-sm-12 col-md-4 col-lg-4 footer__item">
                     <div class="contact_item contact_center">
                         <img class="contact_img" src="./assets/img/svg_animation/phone-receiver.svg" alt="phone">
-                        <a class="contact_link  phone_link" href="callto:8(911)858-05-55">8(911)858-05-55</a> <br>
+                        <a class="contact_link  phone_link" href="callto:8(981)458-98-17">8(981)458-98-17</a> <br>
                         <!-- <div class="advantage_inputbox input_box">
                                             <input class="advantage__input" type="submit" value="заказать обратный вызов">
                                         </div> -->
                     </div>
+                </div>
+                <div class="col-12 col-sm-12 col-md-12 col-lg-12 georgetravin">
+                    <p>разработка и продвижение <br> goshatravin@gmail.com</p>
                 </div>
             </div>
         </div>

@@ -95,6 +95,21 @@ html{
     position: relative;
     
 }
+// input over
+.input-overlay{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #ffc600;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+.input-overlay__text{
+    font-size: 1.5rem;
+}
 .pop-up__text{
     margin-bottom: 0.5rem;
     background: #fcc600;
@@ -109,6 +124,7 @@ html{
     right: 0;
     padding: 1rem;
     cursor: pointer;
+    z-index: 10;
 }
 .pop-up__close-img{
     max-width: 1.5rem;
@@ -239,6 +255,9 @@ a{
 .nav__item:hover{
     border-bottom: 2px solid green;
     transition: 0.5s;
+}
+.logo__img{
+    max-height:10rem;
 }
 // navigation bar finish 
 
@@ -432,6 +451,7 @@ a{
     
     
 }
+
 .block_advantage__title2{
     padding-top: 0.5rem;
     font-size: 1.5rem;
@@ -497,7 +517,7 @@ a{
 
 // pre-footer
 .green-page{
-    background-color: #00a651;
+    background-color: #5561ba;
     padding: 3.3rem 0;
     text-align: center;
 }
@@ -802,3 +822,15 @@ footer{
         height: 100px;
     }
  }
+
+
+//  georgetravin
+
+.georgetravin{
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 400;
+    font-variant: small-caps;
+    padding-top: 3rem;
+
+}
