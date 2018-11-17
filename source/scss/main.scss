@@ -435,7 +435,8 @@ a{
     font-variant: small-caps;
 }
 .block_advantage_text{
-    font-size: 1rem;
+    font-size: 1.2rem;
+    line-height: 1.3rem;
 }
 .advantage_inputbox{
     margin: 0 auto;
@@ -564,6 +565,7 @@ footer{
 }
 .footer_contact{
     text-align: center;
+    margin: 1rem auto;
     
 }
 .contact_link{
@@ -785,9 +787,9 @@ footer{
         
     }
     .link_img{
-        max-width: 3rem;
+        max-width: 4rem;
         margin-top: 1rem;
-        margin-left: 0.5rem;
+        margin-left: 1.5rem;
     }
     .page-header{
         display: none;
